@@ -1,0 +1,101 @@
+.day {
+  display: block;
+  background: white;
+  color: #14213d;
+  padding: 18px;
+  margin-top: 10px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.day:active 
+{ 
+    transform: scale(1.08); 
+    opacity:80%;
+}
+
+.today {
+  background: #14213d;
+  color: white;
+}
+
+.back {
+  color: #2f4fd8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.present { margin-right: 12px; }
+.dim { opacity: 0.3; }
+
+
+
+/*this is for the statistics.html*/
+.overall {
+  background: #14213d;
+  color: white;
+  border-radius: 18px;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.big { font-size: 54px; font-weight: 800; line-height: 1; }
+.meta { font-size: 14px; opacity: 0.85; text-align: right; }
+
+.top { display: flex; justify-content: space-between; align-items: baseline; }
+.pct { font-size: 24px; font-weight: 800; }
+.count { color: #5b6784; font-size: 14px; }
+
+.bar {
+  position: relative;
+  height: 12px;
+  background: #e3e8f1;
+  border-radius: 6px;
+  margin: 10px 0 8px;
+}
+.fill { height: 100%; border-radius: 6px; }
+.tick {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  width: 2px;
+  background: #14213d;
+}
+
+.msg { margin: 0; font-weight: 600; }
+
+.ok { color: #1b8a5a; }
+.warn { color: #c27a00; }
+.bad { color: #c73a3a; }
+.bg-ok { background: #1b8a5a; }
+.bg-warn { background: #c27a00; }
+.bg-bad { background: #c73a3a; }
+
+.stats-link {
+  background: #2f4fd8;
+  color: white;
+  margin-top: 20px;
+}
+
+
+/*this is for edit.html */
+select {
+  font-size: 16px;
+  padding: 12px 14px;
+  width: 100%;
+  margin: 12px 0;
+  border: 2px solid #c5cee0;
+  border-radius: 10px;
+  background: white;
+}
+
+.edit-row { display: flex; gap: 6px; margin-top: 8px; }
+.edit-row input { flex: 1; min-width: 0; width: auto; }
+.edit-row button { padding: 10px 12px; background: #e3e8f1; color: #14213d; }
+.edit-row button:disabled { opacity: 0.3; }
+.edit-row .del { background: #c73a3a; color: white; }
