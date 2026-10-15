@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Attendance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Select Day</h1>
+
+  <a class="day" href="day.html?day=monday">Monday</a>
+  <a class="day" href="day.html?day=tuesday">Tuesday</a>
+  <a class="day" href="day.html?day=wednesday">Wednesday</a>
+  <a class="day" href="day.html?day=thursday">Thursday</a>
+  <a class="day" href="day.html?day=friday">Friday</a>
+  <a class="day" href="day.html?day=saturday">Saturday</a>
+  <a class="day" href="day.html?day=sunday">Sunday</a>
+  <a class="day stats-link" href="statistics.html">Statistics</a>
+  <a class="day stats-link" href="edit.html">Edit timetable</a>
+
+
+  <script>
+    const names = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+    const today = names[new Date().getDay()];
+    const link = document.querySelector('a[href$="day=' + today + '"]');
+    if (link) link.classList.add("today");
+  </script>
+</body>
+</html>
